@@ -10,17 +10,26 @@ import { PagesModule } from './pages/pages.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegistryComponent } from './login/registry/registry.component';
+// import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
+// import { IncreaseDecreaseComponent } from './components/increase-decrease/increase-decrease.component';
+// import { DonutGraphComponent } from './components/donut-graph/donut-graph.component';
+
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegistryComponent
+    RegistryComponent,
+    // DonutGraphComponent,
+    // ProgressBarComponent,
+    // IncreaseDecreaseComponent
   ],
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

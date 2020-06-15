@@ -1,1 +1,43 @@
-<p>progress works!</p>
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Barra de Progreso</h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" [attr.ariaValuenow]='progress1' aria-valuenow="10"
+            aria-valuemin="0" aria-valuemax="100" [style.width]="progress1 + '%'" style="width: 75%"></div>
+        </div><br>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" [attr.ariaValuenow]='progress2' aria-valuenow="10"
+            aria-valuemin="0" aria-valuemax="100" [style.width]="progress2 + '%'" style="width: 75%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <!-- <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <button (click)=changeProgressValue(-5) class="btn btn-outline-primary" type="button" id="button-addon1"><i class="mdi mdi-minus"></i></button>
+          </div>
+          <input name='percentage' [(ngModel)]='percentage' type="text" class="form-control">
+          <div class="input-group-prepend">
+            <button (click)=changeProgressValue(+5) class="btn btn-outline-primary" type="button" id="button-addon1"><i class="mdi mdi-plus"></i></button>
+          </div>
+        </div> -->
+        <app-increase-decrease text="Progress Azul" [percentage]='progress1' (outputProgressValue)='progress1 = $event'></app-increase-decrease>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <app-increase-decrease text="Progress Verde" [percentage]='progress2' (outputProgressValue)='progress2 = $event'></app-increase-decrease>
+      </div>
+    </div>
+  </div>
+</div>

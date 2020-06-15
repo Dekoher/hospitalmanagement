@@ -1,1 +1,36 @@
-<p>graphs1 works!</p>
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <p style="text-align: center;">{{graficos.grafico1.leyenda}}</p>
+        <app-donut-graph [data]='graficos.grafico1.data' [labels]='graficos.grafico1.labels'></app-donut-graph>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <p style="text-align: center;">{{graficos.grafico2.leyenda}}</p>
+        <app-donut-graph [data]='graficos.grafico2.data' [labels]='graficos.grafico2.labels'></app-donut-graph>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <p style="text-align: center;">{{graficos.grafico3.leyenda}}</p>
+        <app-donut-graph [data]='graficos.grafico3.data' [labels]='graficos.grafico3.labels'></app-donut-graph>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <p style="text-align: center;">{{graficos.grafico4.leyenda}}</p>
+        <app-donut-graph [data]='graficos.grafico4.data' [labels]='graficos.grafico4.labels'></app-donut-graph>
+      </div>
+    </div>
+  </div>
+</div>
