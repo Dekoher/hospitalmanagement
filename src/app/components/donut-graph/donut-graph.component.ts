@@ -17,8 +17,6 @@ export class DonutGraphComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log('data=>', this.data);
-    console.log('labels=>', this.labels);
     this.doughnutChartData = this.data;
     this.doughnutChartLabels = this.labels;
   }

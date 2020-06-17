@@ -7,29 +7,29 @@ import { APP_ROUTES } from './app.routes';
 // Modules
 import { PagesModule } from './pages/pages.module';
 
+// Components
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegistryComponent } from './login/registry/registry.component';
-// import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
-// import { IncreaseDecreaseComponent } from './components/increase-decrease/increase-decrease.component';
-// import { DonutGraphComponent } from './components/donut-graph/donut-graph.component';
 
+// Temporal
 import { FormsModule } from '@angular/forms';
+
+// Services
+import { ServiceModule } from './services/service.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegistryComponent,
-    // DonutGraphComponent,
-    // ProgressBarComponent,
-    // IncreaseDecreaseComponent
   ],
   imports: [
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,14 +10,9 @@ export class IncreaseDecreaseComponent implements OnInit {
   @Input() text: string = 'TExt';
   @Output() outputProgressValue: EventEmitter<number> = new EventEmitter();
   @ViewChild('inputIncreaser', {static: true}) inputIncreaser: ElementRef;
-  constructor() {
-    // console.log('text ', this.text);
-    console.log('percentage ', this.percentage);
-  }
+  constructor() { }
 
   ngOnInit() {
-    // console.log('text ', this.text);
-    // console.log('percentage ', this.percentage);
   }
 
   onChamge(newValue: number) {

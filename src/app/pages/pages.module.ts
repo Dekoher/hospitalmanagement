@@ -9,6 +9,7 @@ import { IncreaseDecreaseComponent } from '../components/increase-decrease/incre
 import { DonutGraphComponent } from '../components/donut-graph/donut-graph.component';
 import { FormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ChartsModule } from 'ng2-charts';
     ProgressComponent,
     Graphs1Component,
     IncreaseDecreaseComponent,
-    DonutGraphComponent
+    DonutGraphComponent,
+    AccountSettingsComponent
   ],
   exports: [DashboardComponent, ProgressComponent, Graphs1Component],
   imports: [SharedModule, PAGES_ROUTES, FormsModule, ChartsModule],
