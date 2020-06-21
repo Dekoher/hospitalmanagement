@@ -10,6 +10,7 @@ import { DonutGraphComponent } from '../components/donut-graph/donut-graph.compo
 import { FormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromisesComponent } from './promises/promises.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
     Graphs1Component,
     IncreaseDecreaseComponent,
     DonutGraphComponent,
-    AccountSettingsComponent
+    AccountSettingsComponent,
+    PromisesComponent
   ],
   exports: [DashboardComponent, ProgressComponent, Graphs1Component],
   imports: [SharedModule, PAGES_ROUTES, FormsModule, ChartsModule],
